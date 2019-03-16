@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 
     @PostConstruct
     private void populateSampleData() {
-        users.add(new User("test@mail.com", "password", "Andres", "Perez"));
+        users.add(new User("andresperez", "test@mail.com", "password", "Andres", "Perez"));
     }
 
 
@@ -70,9 +70,11 @@ public class UserServiceImpl implements UserService {
     public User findUserByUsername(String username) {
         User userToReturn = null;
 
-        for (User x : users) {
-            if (x.getUsername().equals(username)) {
-                userToReturn = x;
+        if (users.size() != 0) {
+            for (User x : users) {
+                if (x.getUsername().equals(username)) {
+                    userToReturn = x;
+                }
             }
         }
 

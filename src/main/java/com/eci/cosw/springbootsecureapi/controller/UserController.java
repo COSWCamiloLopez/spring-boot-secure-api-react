@@ -37,8 +37,9 @@ public class UserController {
         String username = login.getUsername();
         String password = login.getPassword();
 
-        //TODO implement logic to verify user credentials
         User user = userService.findUserByUsername(username);
+
+        System.out.println(user);
 
         if (user == null) {
             throw new ServletException("User username not found.");
