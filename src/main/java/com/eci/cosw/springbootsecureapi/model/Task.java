@@ -10,11 +10,11 @@ public class Task {
     private String id;
     private String owner;
     private String description;
-    private String responsible;
+    private Long responsible;
     private String status;
     private Date dueDate;
 
-    public Task(String owner, String description, String responsible, String status, Date dueDate) {
+    public Task(String owner, String description, Long responsible, String status, Date dueDate) {
         this.owner = owner;
         this.description = description;
         this.responsible = responsible;
@@ -51,11 +51,11 @@ public class Task {
         this.description = description;
     }
 
-    public String getResponsible() {
+    public Long getResponsible() {
         return responsible;
     }
 
-    public void setResponsible(String responsible) {
+    public void setResponsible(Long responsible) {
         this.responsible = responsible;
     }
 
