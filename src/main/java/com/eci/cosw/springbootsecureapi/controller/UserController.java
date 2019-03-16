@@ -18,7 +18,7 @@ import java.util.Date;
  * 8/21/17.
  */
 @RestController
-@RequestMapping("user")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired
