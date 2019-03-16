@@ -4,8 +4,7 @@ package com.eci.cosw.springbootsecureapi.model;
  * @author Santiago Carrillo
  * 8/21/17.
  */
-public class User
-{
+public class User {
 
     private long id;
 
@@ -13,90 +12,75 @@ public class User
 
     private String password;
 
-    private String firstname;
+    private String firstName;
 
-    private String lastname;
+    private String lastName;
 
     private String username;
 
 
-    public User()
-    {
+    public User() {
     }
 
-    public User( String email, String password, String firstname, String lastname )
-    {
+    public User(String email, String password, String firstName, String lastname) {
         this.email = email;
         this.password = password;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.firstName = firstName;
+        this.lastName = lastname;
     }
 
 
-    public long getId()
-    {
+    public long getId() {
         return id;
     }
 
-    public void setId( long id )
-    {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail( String email )
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getPassword()
-    {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword( String password )
-    {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getFirstname()
-    {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname( String firstname )
-    {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLastname()
-    {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname( String lastname )
-    {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String getUsername()
-    {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername( String username )
-    {
+    public void setUsername(String username) {
         this.username = username;
     }
 
     @Override
-    public String toString()
-    {
-        return "User{" + "id=" + id + ", email='" + email + '\'' + ", password='" + password + '\'' + ", firstname='"
-            + firstname + '\'' + '}';
+    public String toString() {
+        return "User{" + "id=" + id + ", email='" + email + '\'' + ", password='" + password + '\'' + ", firstName='"
+                + firstName + '\'' + '}';
     }
 }

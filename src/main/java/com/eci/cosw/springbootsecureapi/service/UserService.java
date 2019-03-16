@@ -8,15 +8,41 @@ import java.util.List;
  * @author Santiago Carrillo
  * 8/21/17.
  */
-public interface UserService
-{
+public interface UserService {
+
+    /**
+     * @return
+     */
     List<User> getUsers();
 
-    User getUser( Long id );
+    /**
+     * @param id
+     * @return
+     */
+    User getUser(Long id);
 
-    User createUser( User user );
+    /**
+     * @param user
+     * @return
+     */
+    User createUser(User user);
 
-    User findUserByEmail( String email );
+    /**
+     * @param email
+     * @return
+     */
+    User findUserByEmail(String email);
 
-    User findUserByEmailAndPassword( String email, String password );
+    /**
+     * @param email
+     * @param password
+     * @return
+     */
+    User findUserByEmailAndPassword(String email, String password);
+
+    /**
+     * @param username
+     * @return
+     */
+    User findUserByUsername(String username);
 }
