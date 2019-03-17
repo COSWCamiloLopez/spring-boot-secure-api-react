@@ -37,7 +37,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public List<Task> getTasksByUserId(String userId) {
+    public List<Task> getTasksByUserId(Long userId) {
 
         List<Task> listToReturn = new ArrayList<>();
         for (Task x : tasksList) {

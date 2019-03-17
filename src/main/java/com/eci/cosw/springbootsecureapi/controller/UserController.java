@@ -16,11 +16,30 @@ import java.util.Date;
  */
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("api/user")
+@RequestMapping("user")
 public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @GetMapping("id/{idUser}")
+    @ResponseBody
+    public User getUserById(@PathVariable("idUser") Long idUser) throws ServletException {
+        if (userService.getUser(idUser) != null) {
+            return userService.getUser(idUser);
+        } else {
+            throw new ServletException("Doesn't exist an user whit this id");
+        }
+    }
+
+    @GetMapping("username/{userName}")
+    public User getUserByUserName(@PathVariable("userName") String userName) throws ServletException {
+        if (userService.findUserByUsername(userName) != null) {
+            return userService.findUserByUsername(userName);
+        } else {
+            throw new ServletException("Doesn't exist an user whit this username");
+        }
+    }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Token login(@RequestBody User login)
