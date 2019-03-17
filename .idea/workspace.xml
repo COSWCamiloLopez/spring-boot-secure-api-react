@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="805aa108-17e0-4a50-bba1-0d4ebeb526eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_jsonwebtoken_jjwt_0_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.eci.ieti.secure-api.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.eci.ieti.secure-api.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.eci.ieti.secure-api.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.eci.ieti.secure-api.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" afterDir="false" />
     </list>
@@ -21,11 +35,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -33,11 +77,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -58,11 +111,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/TaskService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/TaskServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -125,6 +179,24 @@
               <item name="spring-boot-secure-api-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootsecureapi" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="secure-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-secure-api-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootsecureapi" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="secure-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-secure-api-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -135,7 +207,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552777511770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552789523904" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TaskPlannerApi" />
   </component>
   <component name="RecentsManager">
@@ -273,12 +345,12 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25917926" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33693305" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32937366" />
@@ -294,9 +366,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.16/8ac536534b3bca3fad92f85b44a585a365a90e5c/tomcat-embed-core-9.0.16-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -342,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/SampleAPIController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -366,6 +428,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -376,30 +455,31 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-          </folding>
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TaskAPIController.java">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state>
+          <caret selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
         </state>
       </provider>
     </entry>
