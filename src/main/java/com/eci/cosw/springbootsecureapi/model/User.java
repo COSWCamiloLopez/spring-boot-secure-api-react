@@ -1,7 +1,5 @@
 package com.eci.cosw.springbootsecureapi.model;
 
-import java.util.Random;
-
 /**
  * @author Santiago Carrillo
  * 8/21/17.
@@ -25,7 +23,6 @@ public class User {
     }
 
     public User(String username, String email, String password, String firstName, String lastName) {
-        this.id = (long) 12356;
         this.username = username;
         this.email = email;
         this.password = password;

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Santiago Carrillo
@@ -33,12 +34,24 @@ public class UserController {
     }
 
     @GetMapping("username/{userName}")
+    @ResponseBody
     public User getUserByUserName(@PathVariable("userName") String userName) throws ServletException {
         if (userService.findUserByUsername(userName) != null) {
             return userService.findUserByUsername(userName);
         } else {
             throw new ServletException("Doesn't exist an user whit this username");
         }
+    }
+
+    @GetMapping("all")
+    @ResponseBody
+    public List<User> getAll() throws Exception {
+        return userService.getUsers();
+    }
+
+    @PostMapping("new")
+    public void createUser(@RequestBody User newUser) {
+        userService.createUser(newUser);
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)

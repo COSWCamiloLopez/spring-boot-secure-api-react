@@ -25,7 +25,7 @@ public interface UserService {
      * @param user
      * @return
      */
-    User createUser(User user);
+    void createUser(User user);
 
     /**
      * @param email

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author Santiago Carrillo
@@ -24,7 +25,10 @@ public class UserServiceImpl implements UserService {
 
     @PostConstruct
     private void populateSampleData() {
-        users.add(new User("andresperez", "test@mail.com", "password", "Andres", "Perez"));
+        User user = new User("andresperez", "test@mail.com",
+                "password", "Andres", "Perez");
+        user.setId(new Random().nextLong());
+        users.add(user);
     }
 
 
@@ -45,8 +49,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User createUser(User user) {
-        return users.get(0);
+    public void createUser(User user) {
+        user.setId(new Random().nextLong());
+        System.out.println(user);
+        users.add(user);
     }
 
     @Override
