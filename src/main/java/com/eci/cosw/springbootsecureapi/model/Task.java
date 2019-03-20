@@ -1,5 +1,7 @@
 package com.eci.cosw.springbootsecureapi.model;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 /**
@@ -7,7 +9,9 @@ import java.util.Date;
  */
 public class Task {
 
+    @Id
     private String id;
+
     private Long owner;
     private String description;
     private Long responsible;

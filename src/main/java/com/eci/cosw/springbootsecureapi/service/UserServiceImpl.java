@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     public UserServiceImpl() {
     }
+
+    @Autowired
+    UserRepository userRepository;
 
     @PostConstruct
     private void populateSampleData() {

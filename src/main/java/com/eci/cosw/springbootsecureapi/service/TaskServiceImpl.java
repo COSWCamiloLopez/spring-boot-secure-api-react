@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.Task;
+import com.eci.cosw.springbootsecureapi.model.TaskRepository;
 import com.eci.cosw.springbootsecureapi.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,9 @@ public class TaskServiceImpl implements TaskService {
     @Autowired
     public TaskServiceImpl() {
     }
+
+    @Autowired
+    TaskRepository taskRepository;
 
     @Override
     public List<Task> geTasksList() {
