@@ -4,7 +4,11 @@ import com.eci.cosw.springbootsecureapi.model.Task;
 import com.eci.cosw.springbootsecureapi.model.TaskRepository;
 import com.eci.cosw.springbootsecureapi.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -18,6 +22,9 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Autowired
+    MongoTemplate mTemptale;
+
+    @Autowired
     TaskRepository taskRepository;
 
     @Override
@@ -27,7 +34,13 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task getTaskById(String id) {
-        return null;
+
+        Query query = new Query();
+        query.addCriteria(Criteria.where("id").is(id));
+
+        Task one = mTemptale.findOne(query, Task.class);
+
+        return one;
     }
 
     @Override
@@ -51,7 +64,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void updateTask(Task task) {
-        try{
+        try {
             taskRepository.deleteById(task.getId());
             taskRepository.save(task);
         } catch (Exception ex) {
