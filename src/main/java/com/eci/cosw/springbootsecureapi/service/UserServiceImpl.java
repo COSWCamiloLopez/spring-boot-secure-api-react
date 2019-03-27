@@ -1,8 +1,12 @@
 package com.eci.cosw.springbootsecureapi.service;
 
+import com.eci.cosw.springbootsecureapi.model.Task;
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -22,6 +26,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Autowired
+    MongoTemplate mTemplate;
+
+    @Autowired
     UserRepository userRepository;
 
     @Override
@@ -31,13 +38,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUser(String id) {
-        User userToReturn = null;
-        for (User x : userRepository.findAll()) {
-            if (id.equals(x.getId())) {
-                userToReturn = x;
-            }
-        }
-        return userToReturn;
+
+        Query query = new Query();
+        query.addCriteria(Criteria.where("id").is(id));
+
+        User one = mTemplate.findOne(query, User.class);
+
+        return one;
     }
 
     @Override

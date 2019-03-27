@@ -13,7 +13,7 @@ import java.util.List;
  */
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping(value = "/task")
+@RequestMapping(value = "api/task")
 public class TaskAPIController {
 
     @Autowired
