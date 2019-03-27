@@ -17,9 +17,6 @@ import java.util.Random;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private List<User> users = new ArrayList<>();
-
-
     @Autowired
     public UserServiceImpl() {
     }
@@ -27,24 +24,15 @@ public class UserServiceImpl implements UserService {
     @Autowired
     UserRepository userRepository;
 
-    @PostConstruct
-    private void populateSampleData() {
-        User user = new User("andresperez", "test@mail.com",
-                "password", "Andres", "Perez");
-        user.setId(new Random().nextLong());
-        users.add(user);
-    }
-
-
     @Override
     public List<User> getUsers() {
-        return users;
+        return userRepository.findAll();
     }
 
     @Override
-    public User getUser(Long id) {
+    public User getUser(String id) {
         User userToReturn = null;
-        for (User x : users) {
+        for (User x : userRepository.findAll()) {
             if (id.equals(x.getId())) {
                 userToReturn = x;
             }
@@ -54,21 +42,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void createUser(User user) {
-        user.setId(new Random().nextLong());
-        System.out.println(user);
-        users.add(user);
+        userRepository.save(user);
     }
 
     @Override
     public User findUserByEmail(String email) {
-        return users.get(0);
+        return userRepository.findByEmail(email);
     }
 
     @Override
     public User findUserByEmailAndPassword(String email, String password) {
         User userToReturn = null;
 
-        for (User x : users) {
+        for (User x : userRepository.findAll()) {
             if (x.getEmail().equals(email) && x.getPassword().equals(password)) {
                 userToReturn = x;
             }
@@ -80,11 +66,9 @@ public class UserServiceImpl implements UserService {
     public User findUserByUsername(String username) {
         User userToReturn = null;
 
-        if (users.size() != 0) {
-            for (User x : users) {
-                if (x.getUsername().equals(username)) {
-                    userToReturn = x;
-                }
+        for (User x : userRepository.findAll()) {
+            if (x.getUsername().equals(username)) {
+                userToReturn = x;
             }
         }
 

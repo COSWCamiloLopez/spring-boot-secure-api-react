@@ -45,7 +45,7 @@ public class TaskAPIController {
      */
     @GetMapping("/user/{userId}")
     @ResponseBody
-    public List<Task> getTasksByUserId(@PathVariable("userId") Long userId) {
+    public List<Task> getTasksByUserId(@PathVariable("userId") String userId) {
         return taskService.getTasksByUserId(userId);
     }
 

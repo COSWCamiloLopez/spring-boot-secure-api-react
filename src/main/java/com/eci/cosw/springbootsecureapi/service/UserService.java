@@ -19,7 +19,7 @@ public interface UserService {
      * @param id
      * @return
      */
-    User getUser(Long id);
+    User getUser(String id);
 
     /**
      * @param user

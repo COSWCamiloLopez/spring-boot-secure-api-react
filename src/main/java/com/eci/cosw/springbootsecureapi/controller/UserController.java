@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("id/{idUser}")
     @ResponseBody
-    public User getUserById(@PathVariable("idUser") Long idUser) throws ServletException {
+    public User getUserById(@PathVariable("idUser") String idUser) throws ServletException {
         if (userService.getUser(idUser) != null) {
             return userService.getUser(idUser);
         } else {

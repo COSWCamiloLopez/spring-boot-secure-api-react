@@ -5,8 +5,6 @@ import com.eci.cosw.springbootsecureapi.model.TaskRepository;
 import com.eci.cosw.springbootsecureapi.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,8 +12,6 @@ import java.util.List;
  */
 @Service
 public class TaskServiceImpl implements TaskService {
-
-    private List<Task> tasksList = new ArrayList<>();
 
     @Autowired
     public TaskServiceImpl() {
@@ -26,58 +22,45 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<Task> geTasksList() {
-        return tasksList;
+        return taskRepository.findAll();
     }
 
     @Override
     public Task getTaskById(String id) {
-        Task taskToReturn = null;
-        for (Task x : tasksList) {
-            if (x.getId().equals(id)) {
-                taskToReturn = x;
-            }
-        }
-        return taskToReturn;
+        return null;
     }
 
     @Override
-    public List<Task> getTasksByUserId(Long userId) {
-
-        List<Task> listToReturn = new ArrayList<>();
-        for (Task x : tasksList) {
-            if (x.getOwner().equals(userId)) {
-                listToReturn.add(x);
-            }
-        }
-        return listToReturn;
+    public List<Task> getTasksByUserId(String userId) {
+        return taskRepository.findByOwner(userId);
     }
 
     @Override
     public void assignedTaskToUser(String taskId, User user) {
-        for (Task x : tasksList) {
+        for (Task x : taskRepository.findAll()) {
             if (x.getId().equals(taskId)) {
-                x.setResponsible(user.getId());
+                x.setResponsible(user.getFirstName());
             }
         }
     }
 
     @Override
     public void removeTask(String taskId) {
-        tasksList.remove(getTaskById(taskId));
+        taskRepository.deleteById(taskId);
     }
 
     @Override
     public void updateTask(Task task) {
-        if (tasksList.contains(getTaskById(task.getId()))) {
-            tasksList.remove(getTaskById(task.getId()));
-            tasksList.add(task);
-        } else {
-            System.out.println("This task doesn't exists");
+        try{
+            taskRepository.deleteById(task.getId());
+            taskRepository.save(task);
+        } catch (Exception ex) {
+            System.out.println("Error updating task: " + task.getId());
         }
     }
 
     @Override
     public void createNewTask(Task task) {
-        tasksList.add(task);
+        taskRepository.save(task);
     }
 }

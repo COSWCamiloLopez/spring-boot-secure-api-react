@@ -22,7 +22,7 @@ public interface TaskService {
      * @param userId
      * @return
      */
-    List<Task> getTasksByUserId(Long userId);
+    List<Task> getTasksByUserId(String userId);
 
     /**
      * @param taskId

@@ -12,16 +12,16 @@ public class Task {
     @Id
     private String id;
 
-    private Long owner;
+    private String owner;
     private String description;
-    private Long responsible;
+    private String responsible;
     private String status;
     private Date dueDate;
 
     public Task() {
     }
 
-    public Task(Long owner, String description, Long responsible, String status, Date dueDate) {
+    public Task(String owner, String description, String responsible, String status, Date dueDate) {
         this.owner = owner;
         this.description = description;
         this.responsible = responsible;
@@ -29,7 +29,7 @@ public class Task {
         this.dueDate = dueDate;
     }
 
-    public void setOwner(Long owner) {
+    public void setOwner(String owner) {
         this.owner = owner;
     }
 
@@ -45,7 +45,7 @@ public class Task {
         return id;
     }
 
-    public Long getOwner() {
+    public String getOwner() {
         return owner;
     }
 
@@ -57,11 +57,11 @@ public class Task {
         this.description = description;
     }
 
-    public Long getResponsible() {
+    public String getResponsible() {
         return responsible;
     }
 
-    public void setResponsible(Long responsible) {
+    public void setResponsible(String responsible) {
         this.responsible = responsible;
     }
 

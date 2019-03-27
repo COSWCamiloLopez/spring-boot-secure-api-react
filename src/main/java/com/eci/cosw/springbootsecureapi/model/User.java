@@ -1,12 +1,15 @@
 package com.eci.cosw.springbootsecureapi.model;
 
+import org.springframework.data.annotation.Id;
+
 /**
  * @author Santiago Carrillo
  * 8/21/17.
  */
 public class User {
 
-    private Long id;
+    @Id
+    private String id;
 
     private String email;
 
@@ -31,11 +34,11 @@ public class User {
     }
 
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
