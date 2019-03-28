@@ -11,7 +11,7 @@ import javax.servlet.ServletException;
 import java.util.Date;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin("*")
 @RequestMapping("token")
 public class TokenController {
 
